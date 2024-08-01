@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container{
+            height: 600px;
+            width: 600px;
+            border: 2px solid;
+            position: relative;
+
+        }
+        .span-1{
+            height: 200px;
+            width: 600px;
+            position: absolute;
+            bottom: 0px;
+            background-color: black;
+        }
+        .span-1::before{
+            width: 60px;
+            height: 160px;
+            position: absolute;
+            bottom: 200px;
+            content: ' ';
+            background-color: black;
+        }
+        .span-1::after{
+            width: 60px;
+            height: 160px;
+            position: absolute;
+            bottom: 200px;
+            content: ' ';
+            background-color: black;
+            right: 0px;
+        }
+        .span-2{
+            width: 300px;
+            height: 160px;
+            position: absolute;
+            bottom: 200px;
+            left: 150px;
+            background-color: black;
+        }
+        .span-3{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            /* bottom: 0; */
+            left: 150px;
+            top: 94px;
+        }
+        .span-4{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            left: 175px;
+            top: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <span class="span-1"></span>
+        <span class="span-2"></span>
+        <span class="span-3"></span>
+        <span class="span-4"></span>
+
+    </div>
+</body>
+</html>

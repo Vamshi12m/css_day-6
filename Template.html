@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+            background-color: white;
+        }
+        .elements{
+            margin-top: 18px;
+            margin-right: 10px;
+        }
+        .a{
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            letter-spacing: 4px;
+        }
+        .heading{
+            margin-left: 10px;
+            font-size: 18px;
+            letter-spacing: 4px;
+        }
+        .heading>p::before{
+            content: "BR";
+            font-weight: bold;
+        }
+        .main{
+            position: relative;
+        }
+        .img{
+            width: 100%;
+        }
+        /* .para{
+            display: inline;
+           position: absolute;
+           right: 600px;
+
+        } */
+        .para1{
+            font-size: 25px;
+            background-color: gray;
+            padding: 6px;
+            letter-spacing: 3px;
+        }
+        .para2{
+            font-size: 30px;
+            font-weight:800;
+            letter-spacing: 3px;
+            color: white;
+        }
+        .para{
+            position: absolute;
+            bottom: 350px;
+            left: 640px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="heading">
+            <p>&nbsp;Architects</p>
+        </div>
+        <div class="elements">
+            <a href="#" class="a">Projects</a>
+            <a href="#" class="a">About</a>
+            <a href="#" class="a">Services</a>
+            <a href="#" class="a">Contact</a>
+        </div>
+    </nav>
+    <div class="main">
+        <img src="https://www.w3schools.com/w3images/architect.jpg" class="img" alt="">
+       <p class="para"><span class="para1">BR</span><span class="para2">Architects</span></p>
+        <!-- <P class="para para2">Architects</P> -->
+    </div>
+</body>
+</html>
